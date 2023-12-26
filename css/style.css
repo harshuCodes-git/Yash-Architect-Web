@@ -220,3 +220,11 @@ img {
     /* background: url(../img/logo.png) no-repeat center center; */
     background-size: cover;
 }
+
+
+.my-custom-class-Mitr {
+    font-family: 'Mitr', sans-serif;
+}
+.my-custom-class-Archivo{
+    font-family: 'Archivo', sans-serif;
+}
