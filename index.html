@@ -73,63 +73,51 @@
             </div>
         </nav>
     </header>
-    <!-- <div class="container" id="container">
-        <div class="caption" id="slider-caption">
-            <div class="caption-heading">
-                <h1>Lorem Ipsum</h1>
-            </div>
-            <div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit.</span></div><a class="btn"
-                href="#">Sit Amet</a>
-        </div>
-        <div class="left-col" id="left-col">
-            <div id="left-slider"></div>
-        </div>
-        <ul class="nav">
-            <li class="slide-up"> <a href="#">
-            </li>
-            <li class="slide-down"> <a id="down_button" href="#">></a></li>
-        </ul>
-    </div> -->
+<div x-data="{ activeSlide: 1, slideCount: 3 }" class="overflow-hidden relative"
+    x-init="setInterval(() => { activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1 }, 5000)">
 
+    <!-- Slider -->
+    <div class="whitespace-nowrap transition-transform duration-500 ease-in-out"
+        :style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'">
 
-    <div class="flex flex-col items-stretch">
-        <div class="flex items-stretch justify-between gap-5 mx-6 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5">
-            <div class="flex grow basis-[0%] flex-col items-start max-md:max-w-full">
-                <div
-                    class="flex-col text-black text-5xl font-black mix-blend-color-burn relative max-w-full overflow-hidden z-[1] min-h-[445px] w-[974px] justify-center items-center pl-24 pr-16 pt-20 pb-44 max-md:max-w-full max-md:text-4xl max-md:pb-10 max-md:px-5">
-                    <img loading="lazy" srcset="..." class="absolute h-full w-full object-cover object-center inset-0" />
-                    BEAUTIFUL DESIGN. EXPERT EXECUTION.
-                </div>
-                <div class="self-stretch flex mt-0 flex-col pl-20 items-start max-md:max-w-full max-md:pl-5">
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f26f72f2ab0146beb28d34df2e170bd3988a6ea4ac627e8da29043b689c23125?"
-                        class="aspect-[2.29] object-contain object-center w-[573px] overflow-hidden max-w-full ml-44" />
-                    <img loading="lazy" srcset="..."
-                        class="aspect-[1.94] object-contain object-center w-full overflow-hidden self-stretch mt-24 max-md:max-w-full max-md:mt-10" />
-                    <div
-                        class="bg-amber-600 bg-opacity-70 z-[1] flex w-[759px] max-w-full flex-col justify-center items-center -mt-40 px-16 py-12 max-md:px-5">
-                        <div class="flex w-[547px] max-w-full flex-col items-stretch mt-8 mb-1.5">
-                            <div class="text-white text-6xl font-black max-md:max-w-full max-md:text-4xl">
-                                ABOUT US
-                            </div>
-                            <div class="text-black text-3xl font-semibold mt-12 max-md:max-w-full max-md:mt-10">
-                                We approach architecture as a challenge — an opportunity — to
-                                craft unique, customized experiences. We believe architecture is
-                                part science and part art.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="text-black text-opacity-70 text-6xl grow whitespace-nowrap mt-[905px] self-end max-md:text-4xl max-md:mt-10">
-                &gt;&gt;
-            </div>
+        <!-- Item 1 -->
+        <div class="inline-block w-full">
+            <img src="/Assets/facebook (1).png" alt="" />
         </div>
-        <div
-            class="bg-white flex w-full flex-col justify-center mt-40 pl-7 pr-16 items-start max-md:max-w-full max-md:mt-10 max-md:px-5">
+        <!-- Item 2 -->
+        <div class="inline-block w-full">
+            <img src="" alt="" />
         </div>
+        <!-- Item 3 -->
+        <div class="inline-block w-full">
+            <img src="path/to/img" alt="" />
+        </div>
+
     </div>
+
+    <!-- Prev/Next Arrows -->
+    <div class="absolute inset-0 flex items-center justify-between px-2">
+        <button @click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount"
+            class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full">
+            &#8592;
+        </button>
+        <button @click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1"
+            class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full">
+            &#8594;
+        </button>
+    </div>
+
+    <!-- Dots Navigation -->
+    <div class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4">
+        <template x-for="slideIndex in slideCount" :key="slideIndex">
+            <button @click="activeSlide = slideIndex" class="h-2 w-2 rounded-full"
+                :class="{'bg-orange-500': activeSlide === slideIndex, 'bg-white/50': activeSlide !== slideIndex}">
+            </button>
+        </template>
+    </div>
+</div>
+
+
 
     
 
