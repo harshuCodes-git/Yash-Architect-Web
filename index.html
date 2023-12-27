@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
 
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="Script/font.js"></script>
-    
+
 </head>
 
 <body>
@@ -23,9 +24,9 @@
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-inherit">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" class="flex items-center">
-                    <img src="Assets/LOGO-removebg-preview (1).png" class="h-6 mr-3 sm:h-9"
-                        alt="Landwind Logo">
-                    <span class="self-center  whitespace-nowrap dark:text-black font-archivo" ><span class="my-custom-class-Mitr">YASH </span>ARCHITECT</span>
+                    <img src="Assets/LOGO-removebg-preview (1).png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+                    <span class="self-center  whitespace-nowrap dark:text-black font-archivo"><span
+                            class="my-custom-class-Mitr">YASH </span>ARCHITECT</span>
                 </a>
                 <div class="flex items-center lg:order-2">
                     <div class="hidden mt-2 mr-4 sm:inline-block">
@@ -73,53 +74,34 @@
             </div>
         </nav>
     </header>
-<div x-data="{ activeSlide: 1, slideCount: 3 }" class="overflow-hidden relative"
-    x-init="setInterval(() => { activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1 }, 5000)">
-
-    <!-- Slider -->
-    <div class="whitespace-nowrap transition-transform duration-500 ease-in-out"
-        :style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'">
-
-        <!-- Item 1 -->
-        <div class="inline-block w-full">
-            <img src="/Assets/facebook (1).png" alt="" />
+    <div id="CrossFade"><img src="//unsplash.it/1600/900?image=1043" alt="img" /><img
+            src="//unsplash.it/1600/900?image=1039" alt="img" /><img src="//unsplash.it/1600/900?image=1017"
+            alt="img" /><img src="//unsplash.it/1600/900?image=929" alt="img" />
+        <div class="intro">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis impedit facilis nesciunt quam vitae
+                voluptatibus ullam vero.</p>
         </div>
-        <!-- Item 2 -->
-        <div class="inline-block w-full">
-            <img src="" alt="" />
-        </div>
-        <!-- Item 3 -->
-        <div class="inline-block w-full">
-            <img src="path/to/img" alt="" />
-        </div>
-
     </div>
 
-    <!-- Prev/Next Arrows -->
-    <div class="absolute inset-0 flex items-center justify-between px-2">
-        <button @click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount"
-            class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full">
-            &#8592;
-        </button>
-        <button @click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1"
-            class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full">
-            &#8594;
-        </button>
+    <div class="Partition-1">
+        <svg id="letterV1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="90%">
+            <polygon points="0,0 50,100 100,0" />
+        </svg>
+        <svg id="letterV2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50%" height="50%">
+            <polygon points="0,0 50,100 100,0" />
+        </svg>
+        <div class="ourfirm">
+            <h1>Our Firm</h1>
+        </div>
     </div>
 
-    <!-- Dots Navigation -->
-    <div class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4">
-        <template x-for="slideIndex in slideCount" :key="slideIndex">
-            <button @click="activeSlide = slideIndex" class="h-2 w-2 rounded-full"
-                :class="{'bg-orange-500': activeSlide === slideIndex, 'bg-white/50': activeSlide !== slideIndex}">
-            </button>
-        </template>
-    </div>
-</div>
 
 
 
-    
+
+
+
 
 
 
