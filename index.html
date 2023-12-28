@@ -18,13 +18,6 @@
     <script src="Script/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Beam &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-    <meta name="author" content="FREEHTML5.CO" />
-
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
@@ -57,6 +50,13 @@
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- FlexSlider CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
+
 
 
 </head>
@@ -70,8 +70,9 @@
                     <div class="container">
                         <div class="nav-header">
                             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                            <span id="fh5co-logo"><a href="index.html"><i class="icon-home2"></i><b>YASH</b>
-                                    Architect</a></span>
+                            <span id="fh5co-logo"><a href="index.html"><img src="Assets/SlideShow/YA LOGO 1.svg"
+                                        alt="">ARCHITECT <b>YASH AGRAWAL</b>
+                                </a></span>
                             <!-- START #fh5co-menu-wrap -->
                             <nav id="fh5co-menu-wrap" role="navigation">
                                 <ul class="sf-menu" id="fh5co-primary-menu">
@@ -92,7 +93,8 @@
             <aside id="fh5co-hero" class="js-fullheight">
                 <div class="flexslider js-fullheight">
                     <ul class="slides">
-                        <li style="background-image: url(/Assets/Siddeshwar\ royale\ living\ room-A\ 1.png);">
+                        <li
+                            style="background-image: url(/Assets/SlideShow/Vikrant\ Building\ Cam\ 003\ Arial\ Night\ View\ 01_12_\ Aug_\ 2023_\ 02.jpg);">
                             <div class="overlay-gradient"></div>
                             <div class="container">
                                 <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
@@ -105,8 +107,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li
-                            style="background-image: url(/Assets/Vikrant\ Building\ Cam\ 001\ Night\ View\ 01_\ 11_\ Aug_\ 2023.jpg);">
+                        <li style="background-image: url(/Assets/SlideShow/Mahavir\ Dham_Lobby_Outside-A.jpg);">
                             <div class="overlay-gradient"></div>
                             <div class="container">
                                 <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
@@ -120,7 +121,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(Assets/images/slide_3.jpg);">
+                        <li style="background-image: url(/Assets/SlideShow/OTC-JAYANT-VILLA-H-4-F.jpg);">
                             <div class="overlay-gradient"></div>
                             <div class="container">
                                 <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
@@ -136,35 +137,19 @@
                     </ul>
                 </div>
             </aside>
-            <div id="fh5co-section">
-                <div class="grid-project-section">
-                    <a href="#">
-                        <img src="Assets/images/project-1.jpg" alt="Project" class="img-responsive">
-                        <div class="desc text-center">
-                            <h2>Ohio Building</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-project-section">
-                    <a href="#">
-                        <img src="Assets/images/project-2.jpg" alt="Project" class="img-responsive">
-                        <div class="desc text-center">
-                            <h2>Bridge of London</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-project-section">
-                    <a href="#">
-                        <img src="Assets/images/project-3.jpg" alt="Project" class="img-responsive">
-                        <div class="desc text-center">
-                            <h2>New York City</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
 
 
             <!-- jQuery -->
+            <script>
+                $(document).ready(function () {
+                    $('.flexslider').flexslider({
+                        animation: 'slide',  // Choose the animation type (e.g., 'fade' or 'slide')
+                        slideshow: true,     // Enable auto-sliding
+                        slideshowSpeed: 3000, // Set the time between slides in milliseconds (e.g., 3000 = 3 seconds)
+                    });
+                });
+            </script>
 
 
             <script src="js/jquery.min.js"></script>
