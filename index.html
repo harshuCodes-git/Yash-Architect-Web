@@ -1,181 +1,643 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Yash Architect</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
-    <!-- <link rel="stylesheet" href="/css/sh_style.css"> -->
-    <link rel="stylesheet" href="/css/slide.css">
-    <link rel="stylesheet" <script src="https://cdn.tailwindcss.com">
-    </script>
-    <script src="Script/font.js"></script>
-    <script src="Script/script.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <meta charset="utf-8">
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Superfish -->
-    <link rel="stylesheet" href="css/superfish.css">
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- FlexSlider CSS and JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
-
-
-
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+ 
 </head>
 
+
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="img/icons/icon-1.png" alt="Icon">
+    </div>
+    <!-- Spinner End -->
 
-    <div id="fh5co-wrapper">
-        <div id="fh5co-page">
-            <div id="fh5co-header">
-                <header id="fh5co-header-section">
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+0123456789"><i
+                            class="fa fa-phone-alt text-primary me-2"></i>+91 9892-109-022</a>
+                    <a class="text-body px-2" href="mailto:arc.yash@gmail.com"><i
+                            class="fa fa-envelope-open text-primary me-2"></i>arc.yash@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
+                    <a class="text-body px-2" href="">Terms</a>
+                    <a class="text-body px-2" href="">Privacy</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">Yash Architect</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="career.html" class="nav-item nav-link">Career</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="about.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">About Us</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="owl-carousel-inner">
                     <div class="container">
-                        <div class="nav-header">
-                            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                            <span id="fh5co-logo"><a href="index.html"><img src="Assets/SlideShow/YA LOGO 1.svg"
-                                        alt="">ARCHITECT <b>YASH AGRAWAL</b>
-                                </a></span>
-                            <!-- START #fh5co-menu-wrap -->
-                            <nav id="fh5co-menu-wrap" role="navigation">
-                                <ul class="sf-menu" id="fh5co-primary-menu">
-                                    <li>
-                                        <a class="active" href="index.html">Home</a>
-                                    </li>
-                                    <li><a href="work.html">Projects</a></li>
-
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">About Us </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">We approach architecture as a challenge —
+                                    an opportunity — to craft unique, customized experiences. We believe architecture is
+                                    part science and part art.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
                         </div>
                     </div>
-                </header>
-            </div>
-            <!-- end:fh5co-header -->
-            <aside id="fh5co-hero" class="js-fullheight">
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li
-                            style="background-image: url(/Assets/SlideShow/Vikrant\ Building\ Cam\ 003\ Arial\ Night\ View\ 01_12_\ Aug_\ 2023_\ 02.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <h2>We shape our buildings; thereafter they shape Us.</h2>
-                                            <p><a href="#" class="btn btn-primary btn-outline">View Details</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(/Assets/SlideShow/Mahavir\ Dham_Lobby_Outside-A.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <h2>Architecture is a visual art, and the buildings speak for themselves.
-                                            </h2>
-                                            <p><a href="#" class="btn btn-primary btn-outline">View Details</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(/Assets/SlideShow/OTC-JAYANT-VILLA-H-4-F.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="col-md-5 col-sm-6 col-xs-12 js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <h2>Architecture begins where engineering ends.</h2>
-                                            <p><a href="#" class="btn btn-primary btn-outline">View Details</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
-            </aside>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg'>">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">About Us </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">We approach architecture as a challenge —
+                                    an opportunity — to craft unique, customized experiences. We believe architecture is
+                                    part science and part art.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'>">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">About Us </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">We approach architecture as a challenge —
+                                    an opportunity — to craft unique, customized experiences. We believe architecture is
+                                    part science and part art.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
 
 
+    <!-- Facts Start -->
 
-            <!-- jQuery -->
-            <script>
-                $(document).ready(function () {
-                    $('.flexslider').flexslider({
-                        animation: 'slide',  // Choose the animation type (e.g., 'fade' or 'slide')
-                        slideshow: true,     // Enable auto-sliding
-                        slideshowSpeed: 3000, // Set the time between slides in milliseconds (e.g., 3000 = 3 seconds)
-                    });
-                });
-            </script>
+    <!-- Facts End -->
 
 
-            <script src="js/jquery.min.js"></script>
-            <!-- jQuery Easing -->
-            <script src="js/jquery.easing.1.3.js"></script>
-            <!-- Bootstrap -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- Waypoints -->
-            <script src="js/jquery.waypoints.min.js"></script>
-            <!-- Superfish -->
-            <script src="js/hoverIntent.js"></script>
-            <script src="js/superfish.js"></script>
-            <!-- Flexslider -->
-            <script src="js/jquery.flexslider-min.js"></script>
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="-img">
+                        <img class="img-fluid" style="align-items: center;" src="img/icons/polygon-v1.png" alt="">
+                        <img class="img-fluid" src="img/icons/polygon-v1-1-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h4 class="section-title"> Us</h4>
+                    <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
+                    <p>
+                        Yash Agrawal Architect is your premier destination for architectural excellence, having
+                        successfully completed over 40 projects with precision and flair. Our firm is dedicated to
+                        turning your dream home into a reality, with a meticulous approach to design and a commitment to
+                        creating spaces that seamlessly blend beauty and functionality.</p>
+                    <p class="mb-4">At Yash Agrawal Architect, we pride ourselves on our ability to elevate your
+                        lifestyle through innovative and thoughtful design solutions. With a rich portfolio that speaks
+                        to our expertise, our team is poised to transform your vision into a living masterpiece,
+                        ensuring each project reflects the perfect union of artistry and practicality. Trust us to bring
+                        your dream home to life, where architectural brilliance meets the unique essence of your
+                        personal style.</p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary"
+                            style="width: 120px; height: 120px;">
+                            <h1 class="display-1 mb-n2" data-toggle="counter-up">40</h1>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Plus</h3>
+                            <h3>Working</h3>
+                            <h3 class="mb-0">Projects</h3>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-            <!-- Main JS (Do not remove) -->
-            <script src="js/main.js"></script>
 
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Our Services</h4>
+                <h1 class="display-5 mb-4">We Focused On Modern Architecture And Interior Design</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-1.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
+                            <h3 class="mb-3">Commercial</h3>
+                            <p class="mb-4">We are experts in creating compelling branded environments and immersive
+                                customer experiences at scale for innovative companies and discerning building owners.
+                            </p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-2.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
+                            <h3 class="mb-3">Miscellaneous</h3>
+                            <p class="mb-4">By exploring the combination of your unique needs and desires with the
+                                untapped potential of your property, we are able to respond with a design that is at
+                                once considered</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-3.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
+                            <h3 class="mb-3">Residential</h3>
+                            <p class="mb-4">Our home is an expression of your taste, lifestyle, aspirations and values.
+                                Our residential team’s utilizes our deep experience, our proven design process and our
+                                technical acumen to help you discover the right design.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title"></h4>
+                    <h1 class="display-5 mb-4">Everything you want, nothing you don't.</h1>
+                    <p class="mb-4">By exploring the combination of your unique needs and desires with the untapped
+                        potential of your property, we are able to respond with a design that is at once considered,
+                        meaningful and surprising. Our job is to maximize what you consider valuable, to discover the
+                        unrealized.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-2.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Location: Mumbai</h3>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+                                        diam stet diam sed stet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-3.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Innovative Solutions</h3>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+                                        diam stet diam sed stet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-4.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Project Management</h3>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+                                        diam stet diam sed stet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="img/assets/Everything image.png" alt="">
+                        <img class="img-fluid" src="img/assets/Everything image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Our Projects</h4>
+                <h1 class="display-5 mb-4">Visit Our Latest Projects And Our Innovative Works</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h3 class="m-0">01. SIDHESHWAR ROYALE </h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h3 class="m-0">02. GURUKRUPA</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h3 class="m-0">03. Mexwel Buiding</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h3 class="m-0">04. Shopping Complex</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100"
+                                            src="img/assets/Siddeshwar royale night view.png" style="object-fit: cover;"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">SIDHESHWAR ROYALE ESTABLISH IN 2017</h1>
+                                    <p class="mb-4">Located in Chembur, Mumbai, the Yug Sidheshwar Royale is a
+                                        thoughtfully planned one, equipped with all amenities for a comfortable living.
+                                        There are in total 19 units in this project.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Location: Mumbai</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Function: Residential</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Area: 30795 sq.ft. approx</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100"
+                                            src="img/assets/Gurukrupa project.png" style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                        clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Location: Mumbai</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Area: 30795 sq.ft. approx</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                        clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Location: Mumbai</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Area: 30795 sq.ft. approx</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                        clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Location: Mumbai</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Area: 30795 sq.ft. approx</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Team Start -->
+
+    <!-- Team End -->
+
+
+    <!-- Career Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title">Career</h4>
+                    <h1 class="display-5 mb-4">Make An Career To Start Your Dream Project</h1>
+                    <p class="mb-4">By exploring the combination of your unique needs and desires with the untapped
+                        potential of your property, we are able to respond with a design that is at once considered,
+                        meaningful and surprising. Our job is to maximize what you consider valuable, to discover the
+                        unrealized.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light"
+                                    style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="mb-2">Call Us Now</p>
+                                    <h3 class="mb-0">+91 9892-109-022</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light"
+                                    style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="mb-2">Mail Us Now</p>
+                                    <h3 class="mb-0">arc.yash@gmail.com</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <select class="form-select" style="height: 55px;">
+                                <option selected>Choose Service</option>
+                                <option value="1">Service 1</option>
+                                <option value="2">Service 2</option>
+                                <option value="3">Service 3</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="date" id="date" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" placeholder="Choose Date"
+                                    data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="time" id="time" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" placeholder="Time"
+                                    data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Career End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Testimonial</h4>
+                <h1 class="display-5 mb-4">Thousands Of Customers Who Trust Us And Our Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                        justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                        justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                        justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Address</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9892-109-0220</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>arc.yash@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Services</h3>
+                    <a class="btn btn-link" href="">Architecture</a>
+                    <a class="btn btn-link" href="">3D Animation</a>
+                    <a class="btn btn-link" href="">House Planning</a>
+                    <a class="btn btn-link" href="">Interior Design</a>
+                    <a class="btn btn-link" href="">Construction</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Quick Links</h3>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Newsletter</h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Architect Yash Agrawal</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
-
-
-
-
-
-
-
-
 
 </html>
