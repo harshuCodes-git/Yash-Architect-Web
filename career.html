@@ -32,6 +32,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
 
 </head>
 
@@ -153,18 +154,34 @@
                                 <option value="3">Office assistant</option>
                             </select>
                         </div>
+
                         <div class="col-12 col-sm-6">
                             <div class="date" id="date" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" placeholder="Choose Date"
-                                    data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                <button type="button" onclick="openSection()"
+                                    class="btn btn-light w-100 py-3 border border-black">Upload</button>
+
+                                <div id="drop-area" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)">
+                                    <p>Drag & drop a PDF or image file here or click to choose a file</p>
+                                    <input type="file" id="file-input" accept=".pdf, image/*"
+                                        onchange="handleFileSelect(event)">
+                                    <label for="file-input" id="file-label">Choose a file</label>
+                                    <button id="clear-button" onclick="clearFile()">Clear</button>
+                                </div>
+
+                                <div id="file-preview">
+                                    <img id="preview-image" alt="Preview">
+                                    <embed id="preview-pdf" type="application/pdf" />
+                                </div>
                             </div>
                         </div>
+
                         <div class="col-12 col-sm-6">
                             <div class="time" id="time" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" placeholder="Time"
-                                    data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                <button type="button" onclick="previewFile()" id=""
+                                    class="btn btn-light w-100 py-3 border border-black">Preview</button>
                             </div>
                         </div>
+
                         <div class="col-12">
                             <textarea class="form-control" rows="5" placeholder="Message"></textarea>
                         </div>
@@ -203,11 +220,12 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Services</h3>
                     <a class="btn btn-link" href="">Architecture</a>
-                    <a class="btn btn-link" href="">3D Animation</a>
-                    <a class="btn btn-link" href="">House Planning</a>
-                    <a class="btn btn-link" href="">Interior Design</a>
-                    <a class="btn btn-link" href="">Construction</a>
+                    <a class="btn btn-link" href="">Liasoning</a>
+                    <a class="btn btn-link" href="">Project management consultancy</a>
+                    <a class="btn btn-link" href="">Interior Designing</a>
                 </div>
+
+
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Quick Links</h3>
                     <a class="btn btn-link" href="">About Us</a>
@@ -254,6 +272,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    
+
 </body>
 
 </html>
