@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -33,14 +33,31 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style1.css" rel="stylesheet">
-    <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <meta name="author" content="BootstrapBrain">
+
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./assets/css/concept-bsb.css">
+
+    <!-- BSB Head -->
 </head>
 
 <body>
     <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+        <img class="position-absolute top-50 start-50 translate-middle" src=" img/icons/icon-1.jpg" alt="Icon"
+            height="50px" width="50px">
 
+    </div>
     <!-- Spinner End -->
 
 
@@ -54,15 +71,15 @@
         data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
             <h2 class="text-primary m-0"><img class="me-3" src=" img/icons/icon-1.jpg" alt="Icon" height="50px"
-                    width="50px">Architect Yash Agrawal</h2>
+                    width="50px">ARCHITECT YASH AGRAWAL</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="project.html" class="nav-item nav-link active">Projects</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
                 <a href="career.html" class="nav-item nav-link">Career</a>
 
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -70,9 +87,6 @@
             <a href="about.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">About Us</a>
         </div>
     </nav>
-    <!-- Navbar End -->
-
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -88,202 +102,134 @@
     </div>
     <!-- Page Header End -->
 
-
+    <!-- Main -->
     <main id="main">
 
 
 
-        <!-- ======= Our Projects Section ======= -->
-        <section id="projects" class="projects">
-            <div class="container" data-aos="fade-up">
-
-                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                    data-portfolio-sort="original-order">
-
-
-
-                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-                        <div class="portfolio-content h-100">
-                            <img src="assets/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Remodeling 1</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1"
-                                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="project-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div>
-                    </div><!-- End Projects Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-                        <div class="portfolio-content h-100">
-                            <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Construction 1</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="assets/img/projects/construction-1.jpg" title="Construction 1"
-                                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="project-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div>
-                    </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Repairs 1</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1"
-                                        data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Design 1</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/design-1.jpg" title="Repairs 1"
-                                        data-gallery="portfolio-gallery-book" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Remodeling 2</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2"
-                                        data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Construction 2</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/construction-2.jpg" title="Construction 2"
-                                        data-gallery="portfolio-gallery-construction" class="glightbox preview-link">
-                                    </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Repairs 2</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2"
-                                        data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Design 2</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/design-2.jpg" title="Repairs 2"
-                                        data-gallery="portfolio-gallery-book" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Remodeling 3</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3"
-                                        data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Construction 3</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/construction-3.jpg" title="Construction 3"
-                                        data-gallery="portfolio-gallery-construction" class="glightbox preview-link">
-                                    </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Repairs 3</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2"
-                                        data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                            <div class="portfolio-content h-100">
-                                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Design 3</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                    <a href="assets/img/projects/design-3.jpg" title="Repairs 3"
-                                        data-gallery="portfolio-gallery-book" class="glightbox preview-link"> </a>
-                                    <a href="project-details.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End Projects Item -->
-
-                    </div><!-- End Projects Container -->
-
+        <div class="container overflow-hidden">
+            <div class="row gy-3 gy-md-2 bsb-project-1-grid">
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-1.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Charming Concept</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Photography</div>
+                        </figcaption>
+                    </figure>
                 </div>
 
-            </div>
-        </section><!-- End Our Projects Section -->
+                <div class="col-12 col-md-6 col-lg-6 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                src="./assets/img/project/project-img-2.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInUp">Linear Architecture</h3>
+                            <div class="text-white bsb-hover-fadeInDown">Inspiration</div>
+                        </figcaption>
+                    </figure>
+                </div>
 
-    </main><!-- End #main -->
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-3.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Endless Looks</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Nature</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-4.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Sleek Typography</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Design</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-5.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Ebony Vintage</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Fashion</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-6.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Orange Shine</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Food</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-7.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Boat Adventure</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Health</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-8.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Offroad Moves</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Nature</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="./assets/img/project/project-img-9.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Cozy Occupancy</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Design</div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </main>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -321,7 +267,16 @@
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
-
+                <!-- <div class="col-lg-3 col-md-6">
+                            <h3 class="text-light mb-4">Newsletter</h3>
+                            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Your email">
+                                <button type="button"
+                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div> -->
             </div>
         </div>
         <div class="container-fluid copyright">
@@ -341,25 +296,19 @@
     <!-- Footer End -->
 
 
-    <!-- Back to Top -->
+    <!-- Javascript Files: Vendors -->
+    <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript Files: Controllers -->
+    <script src="./assets/controller/project-1.js"></script>
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-
-
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -373,8 +322,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
 
+
+    <!-- BSB Body End -->
 </body>
 
 </html>
