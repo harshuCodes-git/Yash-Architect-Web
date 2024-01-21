@@ -112,14 +112,10 @@
                     </div>
                 </div>
             </div>
-<<<<<<< Updated upstream
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Project-images/Chandralaxmi_Lobby_01.jpg'>">
-                <img class="img-fluid" src="img/Project-images/Chandralaxmi_Lobby_01.jpg" alt="">
-=======
+
             <div class="owl-carousel-item position-relative"
-                data-dot="<img src='img/Project-images/Siddeshwar royale pool view_ 21_Mar_2023.jpg'>">
-                <img class="img-fluid" src="img/Project-images/Siddeshwar royale pool view_ 21_Mar_2023.jpg" alt="">
->>>>>>> Stashed changes
+                data-dot="<img src='img/Project-images/OTC-JAYANT-VILLA-H-4-F.jpg'>">
+                <img class="img-fluid" src="img/Project-images/OTC-JAYANT-VILLA-H-4-F.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -135,6 +131,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Carousel End -->
 
@@ -440,22 +437,25 @@
                                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png" class="d-block w-100" alt="...">
+                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png" class="d-block w-100" alt="...">
+                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png" class="d-block w-100" alt="...">
+                                                    <img src="/img/Project-images/SIDDHESHWAY-YUGDEVLOPER.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                                                data-bs-slide="prev">
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                                                data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleRide" data-bs-slide="next">
                                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Next</span>
                                             </button>
@@ -571,19 +571,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!-- <form > -->
+                <form method="POST"
+                    action="https://script.google.com/macros/s/AKfycbw8OTJUNrhXfEDIR8LR_IzAO7fa_5J0MK0q9RPJNLMFQZ0tsVp8RI_oC1MVnh7Bgz_HFg/exec"
+                    class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3">
                         <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
+                            <input type="text" class="form-control" name="Your-Name" placeholder="Your Name"
+                                style="height: 55px;">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
+                            <input type="email" class="form-control" name="Your-Email" placeholder="Your Email"
+                                style="height: 55px;">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
+                            <input type="text" class="form-control" name="Your-Mobile" placeholder="Your Mobile"
+                                style="height: 55px;">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <select class="form-select" style="height: 55px;">
+                            <select class="form-select" style="height: 55px;" name="Choose-Service">
                                 <option selected>Choose Service</option>
                                 <option value="1">Architect</option>
                                 <option value="2">Interior Designer</option>
@@ -601,7 +607,7 @@
                                 <div id="drop-area" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)">
                                     <p>Drag & drop a PDF or image file here or click to choose a file</p>
                                     <input type="file" id="file-input" accept=".pdf, image/*"
-                                        onchange="handleFileSelect(event)">
+                                        onchange="handleFileSelect(event)" name="Resume">
                                     <label for="file-input" id="file-label">Choose a file</label>
                                     <button id="clear-button" onclick="clearFile()">Clear</button>
                                 </div>
@@ -621,13 +627,14 @@
                         </div>
 
                         <div class="col-12">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="5" placeholder="Message" name="Message"></textarea>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                         </div>
                     </div>
-                </div>
+                    <!-- </div> -->
+                </form>
             </div>
         </div>
     </div>
@@ -712,6 +719,9 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+    <script src="/Google Sheet.js"></script>
+
+
 </body>
 
 </html>
