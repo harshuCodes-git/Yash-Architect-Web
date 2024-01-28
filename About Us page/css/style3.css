@@ -12039,7 +12039,7 @@ h5,
   z-index: 0;
 }
 
-.navbar-brand:after {
+/* .navbar-brand:after {
   position: absolute;
   top: 50%;
   left: -12px;
@@ -12055,7 +12055,7 @@ h5,
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
+} */
 
 .navbar-brand span {
   color: #fff;
