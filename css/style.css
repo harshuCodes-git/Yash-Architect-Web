@@ -170,7 +170,7 @@ h6,
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.133);
 }
 
 @media (max-width: 768px) {
