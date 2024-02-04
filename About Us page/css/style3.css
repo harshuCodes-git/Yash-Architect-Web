@@ -11763,7 +11763,7 @@ h5,
 
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #000000 !important;
+    background: #fefefe !important;
     position: relative;
     top: 0;
     padding-top: 0;
@@ -11916,8 +11916,8 @@ h5,
 }
 
 .ftco-navbar-light .navbar-toggler {
-  border: none;
-  color: rgba(255, 255, 255, 0.5) !important;
+  border: solid px;
+  color: rgb(7 6 6 / 50%) !important;
   cursor: pointer;
   padding-right: 0;
   text-transform: uppercase;
@@ -13413,7 +13413,7 @@ textarea.form-control {
   width: 40px;
   font-size: 18px;
   padding-top: 2px;
-  color: white;
+  color: #b78d65;
 }
 
 .block-6 {
@@ -13874,4 +13874,48 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #777777;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .form-control {
+  border-color: #777777;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .copyright a:hover {
+  color: var(--primary);
 }
